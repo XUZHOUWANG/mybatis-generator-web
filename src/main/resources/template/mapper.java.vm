@@ -1,16 +1,51 @@
 package ${package}.mapper;
-
-import ${package}.entity.${className};
+import ${package}.model.po.${className};
 import tk.mybatis.mapper.common.Mapper;
 
 /**
  * ${comments}
- * 
+ *
  * @author ${author}
  * @email ${email}
  * @date ${datetime}
  */
 @Mapper
-public interface ${className}Mapper extends Mapper<${className}> {
-	
+public interface ${className}Mapper {
+
+    /**
+     * 查询单个实体
+     * @param Id id
+     */
+    ${className} getById(Long Id);
+
+    /**
+     * 查询列表
+     * @param so 查询条件
+     * @return list
+     */
+    List<${className}> search(${className}So so);
+
+    /**
+     * 统计
+     * @param so 查询条件
+     */
+    int count(${className}So so);
+
+    /**
+     * 插入对象
+     * @param po 持久化对象
+     */
+    int insert(${className}Po po);
+
+    /**
+     * 更新对象
+     * @param po
+     */
+    int updateById(${className}Po po);
+
+    /**
+     * 删除实体
+     * @param Id id
+     */
+    int deleteById(Long Id);
 }
