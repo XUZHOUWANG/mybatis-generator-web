@@ -18,3 +18,10 @@ mybatis的代码生成器。这个代码参考ace-security的项目中代码生�
  http://localhost:7778/generator/page?limit=10&offset=0
 
 ### 3. 计划
+
+ * 定义项目规范
+ * 符合项目规范支持
+ * 支持web界面
+ * 支持动态修改模板
+ * 支持基础包路径修改
+ * 支持项目结构修改
