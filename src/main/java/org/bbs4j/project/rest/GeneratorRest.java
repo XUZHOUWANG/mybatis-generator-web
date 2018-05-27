@@ -20,7 +20,7 @@ import java.util.Map;
  * Created by ace on 2017/8/25.
  */
 @Controller
-@RequestMapping("/base/generator")
+@RequestMapping("/generator")
 public class GeneratorRest {
 
     @Autowired
